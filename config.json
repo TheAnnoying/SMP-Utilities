@@ -1,0 +1,16 @@
+{
+    "token":"ODgyNjA0ODIxNjEyNDgyNjAw.YS9zyw.TpP95v989KQYqFXAk-AnNSxTrxM",
+    "clientId":"882604821612482600",
+    "guildId": "844156404477853716",
+	"accentColor": "#e74c3c",
+    "accentColorOld":"#E38E40",
+    "errorColor":"RED",
+    "roleIds": {
+		"Moderator": "864591312820633620",
+		"Admin": "844177255193903116",
+		"Member": "844493763988422676",
+		"Developer": "844176978411913226",
+		"Donator": "878578541745283092",
+		"Bots": "844177151372558337"
+    }
+}
