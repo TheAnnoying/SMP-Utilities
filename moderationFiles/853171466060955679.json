@@ -1,0 +1,72 @@
+{
+  "name": "TheAnnoying's Bot Lab",
+  "starboard": {
+    "details": [
+      null,
+      null,
+      null
+    ]
+  },
+  "modpingRole": null,
+  "logs": {
+    "channel": "945391148636180520",
+    "types": [
+      "4",
+      "3",
+      "2",
+      "1",
+      "0",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ]
+  },
+  "welcomeChannel": "945055114278883428",
+  "welcomeMessage": "Welcome {ping} to **TheAnnoying's Bot Lab**. Please be nice to others.",
+  "welcomeHexColor": "#1EB1C5",
+  "leaveChannel": "945055114278883428",
+  "leaveMessage": "Goodbye to you, {nametag}. I hope you had a good time!",
+  "leaveHexColor": "#682B1F",
+  "tickets": {
+    "channel": "945391659573727314"
+  },
+  "blacklistedWords": [
+    "nigg",
+    "motherfucker",
+    "motherfricker",
+    "niga",
+    "shit",
+    "fornite"
+  ],
+  "users": [
+    {
+      "name": "Lianecx",
+      "id": "675658958383349770",
+      "warnAmount": 0,
+      "muted": false,
+      "timedout": false,
+      "warns": []
+    },
+    {
+      "name": "Circle",
+      "id": "939016726929113129",
+      "warnAmount": 0,
+      "warns": [
+        {
+          "warnReason": "Dont ban yourself",
+          "time": "1645707117",
+          "moderatorId": "588425966804533421"
+        },
+        {
+          "warnReason": "Fridge",
+          "time": "1645707126",
+          "moderatorId": "588425966804533421"
+        }
+      ]
+    }
+  ]
+}

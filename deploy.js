@@ -26,33 +26,35 @@ const helpData = new SlashCommandBuilder()
         option.setName('command')
         .setDescription('Set the command of which you want to get information.')
         .setRequired(false)
-    );
-
-//Still Help SlashCommandBuilder
-helpData.options[0].choices = [];
-for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    helpData.options[0].choices.push({ name: command.name, value: command.name });
-}
+    ).toJSON();
 
 //Push all SlashBuilders (in JSON) and permissions from all command files to array
 const commands = [];
 const permissions = [];
-for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    commands.push(command.data.toJSON());
-	if(command.permissions) {
-        let perms = [];
-        for(const perm of command.permissions) {
-            if(roleIds[perm]) perms.push({ id: roleIds[perm], type: 1, permission: true });
-            else if(!isNaN(perm)) perms.push({ id: perm, type: 1, permission: true });
+
+helpData.options[0].autocomplete = true;
+
+
+const commandFolders = fs.readdirSync('./commands/');
+for (const folder of commandFolders) {
+    const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
+    for(const file of commandFiles) {
+        const command = require(`./commands/${folder}/${file}`);
+        commands.push(command.data.toJSON());
+  
+        if(command.permissions) {
+            let perms = [];
+            for(const perm of command.permissions) {
+                if(roleIds[perm]) perms.push({ id: roleIds[perm], type: 1, permission: true });
+                else if(!isNaN(perm)) perms.push({ id: perm, type: 1, permission: true });
+            }
+            permissions.push({ name: command.name, perms: perms });
         }
-        permissions.push({ name: command.name, perms: perms });
     }
 }
 
 //Push help SlashBuilder (in JSON) to array
-commands.push(helpData.toJSON());
+commands.push(helpData);
 
 const rest = new REST({ version: '9' }).setToken(token);
 
@@ -80,7 +82,6 @@ const rest = new REST({ version: '9' }).setToken(token);
 				permissions: permissions.find(cmd => cmd.name === permission.name).perms,
 			});
 		}
-        console.log(fullPermissions)
 
         //Upload permissions to discord
         await rest.put(

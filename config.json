@@ -1,16 +1,15 @@
 {
-    "token":"ODgyNjA0ODIxNjEyNDgyNjAw.YS9zyw.TpP95v989KQYqFXAk-AnNSxTrxM",
+    "token":"ODgyNjA0ODIxNjEyNDgyNjAw.YS9zyw.DtDarSw1ndr-2J1IW7_W5w4z4Dw",
     "clientId":"882604821612482600",
     "guildId": "844156404477853716",
-	"accentColor": "#e74c3c",
-    "accentColorOld":"#E38E40",
+    "cx": "a90003053eaff1e76",
+    "key": "AIzaSyBZ3TdOTToR0SlTTA1qerOLuE7KjbFNrQo",
+    "accentColorTwo":"#43C71B",
+	"accentColor":"#e74c3c",
     "errorColor":"RED",
+    "economyColor":"GREEN",
     "roleIds": {
-		"Moderator": "864591312820633620",
-		"Admin": "844177255193903116",
-		"Member": "844493763988422676",
-		"Developer": "844176978411913226",
-		"Donator": "878578541745283092",
-		"Bots": "844177151372558337"
+		  "Moderator": "864591312820633620",
+		  "Admin": "844177255193903116"
     }
 }

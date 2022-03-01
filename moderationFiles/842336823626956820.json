@@ -1,0 +1,31 @@
+{
+  "name": "TheAnnoyingMama's server",
+  "starboard": {
+    "details": [
+      null,
+      null,
+      null
+    ]
+  },
+  "modpingRole": null,
+  "logs": {
+    "channel": null,
+    "types": []
+  },
+  "welcomeChannel": null,
+  "welcomeMessage": null,
+  "welcomeHexColor": null,
+  "leaveChannel": null,
+  "leaveMessage": null,
+  "leaveHexColor": null,
+  "tickets": {
+    "channel": null
+  },
+  "blacklistedWords": [
+    "nigg",
+    "motherfucker",
+    "motherfricker",
+    "niga"
+  ],
+  "users": []
+}
