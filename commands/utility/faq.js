@@ -24,11 +24,11 @@ module.exports = {
         if(question1 === 'connecting_with_aternos'){
             const WorkingWithAternos = new Discord.MessageEmbed()
                 .setTitle("<:aternos:887775868242501683> Connecting With Aternos or Minehut")
-                .setDescription(`Connecting our bot with **Aternos** or **Minehut** servers is not possible and will probably never be possible.
-                Both server hosts do not work since they do not support ftp or additional ports for plugins (which are needed however to connect with our bot).`)
+                .setDescription(`Connecting our bot with **Aternos** or **Minehut** servers is currently **not possible**.
+                This is because both server hosts don't support ftp or additional ports for plugins (which are needed however to connect with our bot).`)
                 .setColor(bot.accentColor)
                 .addField("If you have a paid server, you will most likely be able to connect using ftp or the plugin.", '\u200b')
-                .addField("Have suggestions for us?", `If you have ANY ideas how we can connect aternos or minehut server with the bot, you can suggest them over at <#844493308045950996> with \`/suggest\`.`).setColor(bot.accentColor)
+                .addField("But there's a solution?!\n", `We are currently working on a solution for this problem as there are lots of people wanting to connect their aternos or minehut server with out bot. However, this is in very early development and we cannot give any specific dates or schedule.`)
                 .addField("\u200b", "**Idea for a question?** Use \`/suggest\` in <#844493308045950996>");
             message.reply({ embeds: [WorkingWithAternos] });
         }
