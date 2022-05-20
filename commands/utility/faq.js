@@ -28,7 +28,7 @@ module.exports = {
                 This is because both server hosts don't support ftp or additional ports for plugins (which are needed however to connect with our bot).`)
                 .setColor(bot.accentColor)
                 .addField("If you have a paid server, you will most likely be able to connect using ftp or the plugin.", '\u200b')
-                .addField("But there's a solution?!\n", `We are currently working on a solution for this problem as there are lots of people wanting to connect their aternos or minehut server with out bot. However, this is in very early development and we cannot give any specific dates or schedule.`)
+                .addField("But there's a solution?!", `We are currently working on a solution for this problem as there are lots of people wanting to connect their aternos or minehut server with out bot. However, this is in very early development and we cannot give any specific dates or schedule.`)
                 .addField("\u200b", "**Idea for a question?** Use \`/suggest\` in <#844493308045950996>");
             message.reply({ embeds: [WorkingWithAternos] });
         }
